@@ -1,0 +1,35 @@
+.top-space {
+  margin-top: 100px;
+}
+
+.calculatorBox {
+  border: 1px solid;
+}
+
+.calculator-input {
+  background-color: gray;
+  margin-top: 5px;
+  border-bottom-width: 10px;
+  margin-bottom: 10px;
+}
+
+.numButtonContainer {
+  margin-bottom:10px;
+  padding-right: 0;
+}
+.zero-btn {
+  width: 96%;
+}
+.actionButtonContainer{
+  padding-left: 0;
+}
+.full-width {
+  width: 100%;
+}
+
+.equal-button-container {
+
+  padding-bottom: 10px;
+  padding-top: 2px;
+
+}

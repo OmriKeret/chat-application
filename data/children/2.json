@@ -1,0 +1,18 @@
+{
+  "childCode":2,
+  "age": 6,
+  "name": "Sapir",
+  "homeworks": [{
+    "recived": "1468658545486",
+    "dueTo": "1468658945486",
+    "subject": "math",
+    "done": false
+  }],
+  "teacher": "admin",
+  "MathLabels": ["January", "February", "March", "April", "May", "June", "July"],
+  "MathSeries":["Sapir", "Average"],
+  "MathGrades":[[100, 99, 80, 81, 86, 65, 90], [28, 48, 40, 19, 86, 27, 90]],
+  "EnglishLabels": ["January", "February", "March", "April", "May", "June", "July"],
+  "EnglishSeries":["Sapir", "Average"],
+  "EnglishGrades":[[65, 59, 80, 81, 56, 55, 40], [28, 48, 40, 19, 86, 27, 90]]
+}

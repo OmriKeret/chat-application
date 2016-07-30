@@ -1,0 +1,24 @@
+<ion-view view-title="Child's info">
+  <ion-content>
+    <div class="item item-divider">
+      <h1>{{child.name}}'s Grades</h1>
+    </div>
+    <div class="card">
+      <div class="item item-divider">
+        Math Test Grades
+      </div>
+
+      <div class="item item-text-wrap">
+        <canvas id="line" class="chart chart-line" chart-data="child.MathGrades" chart-labels="child.MathLabels" chart-legend="true" chart-series="child.MathSeries" chart-options="{showTooltips: false}"></canvas>
+      </div>
+    </div>
+    <div class="card">
+      <div class="item item-divider">
+        English Test Grades
+      </div>
+      <div class="item item-text-wrap">
+        <canvas id="bar" class="chart chart-bar"  chart-data="child.EnglishGrades" chart-labels="child.EnglishLabels" chart-legend="true" chart-series="child.EnglishSeries" chart-options="{showTooltips: false}"></canvas>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

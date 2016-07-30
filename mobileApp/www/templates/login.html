@@ -1,0 +1,122 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <ion-tabs class="tabs-icon-only tabs-stable">
+
+      <ion-tab title="Login" icon="ion-log-in">
+        <form ng-submit="doLogin(loginData)">
+          <div class="list">
+            <label class="item item-input">
+              <span class="input-label">Username</span>
+              <input type="text" ng-model="loginData.username">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Password</span>
+              <input type="password" ng-model="loginData.pass">
+            </label>
+            <label class="item">
+              <button class="button button-block button-positive" type="submit">Log in</button>
+            </label>
+            <div class="error" ng-show="logErr">
+              <i class="ion-information-circled"></i>
+              Username or password are incorrect
+            </div>
+          </div>
+        </form>
+      </ion-tab>
+
+      <ion-tab title="SignUp" icon="ion-ios-personadd">
+        <form ng-submit="signup(userSignup)">
+          <div class="list">
+            <div class="row">
+              <div class="col">
+                <label class="item item-input">
+                  <input id="username" name="username" type="text" placeholder="Your Username"
+                         ng-model="userSignup.username">
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label class="item item-input">
+                  <input id="email" name="email" type="email" placeholder="Your email"
+                         ng-model="userSignup.email">
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label class="item item-input">
+                  <input id="firstname" name="firstname" type="text" placeholder="Your first name"
+                         ng-model="userSignup.firstName">
+                </label>
+              </div>
+              <div class="col">
+                <label class="item item-input">
+                  <input id="lastname" name="lastname" type="text" placeholder="Your last name"
+                         ng-model="userSignup.lastName">
+                </label>
+
+              </div>
+            </div>
+            <div class="row" >
+              <div class="col">
+                <label class="item item-input">
+                  <input  name="childCode" type="text" placeholder="Your Child's code"
+                         ng-model="userSignup.childCode[0]">
+                </label>
+              </div>
+            </div>
+            <!--<div class="row">-->
+              <!--<div class="col">-->
+                <!--<div class="button button-balanced" ng-click="userSignup.childCode.push('')">-->
+                  <!--Add Child-->
+                <!--</div>-->
+                <!--<div class="button button-assertive" ng-click="userSignup.childCode.length - 1 ? userSignup.childCode.pop() : ''">-->
+                  <!--Remove Child-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <div class="row">
+              <div class="col">
+
+                <label class="item item-input">
+                  <input id="password" name="password" type="password" placeholder="Your password"
+                         ng-model="userSignup.pass">
+                </label>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col">
+
+                <label class="item item-input">
+                  <input id="again" name="again" type="password" placeholder="confirm your password"
+                         ng-model="userSignup.again">
+                </label>
+              </div>
+            </div>
+
+            <div >
+              <button ng-submit class="button button-block button-stable" type="submit">
+                SignUp
+              </button>
+            </div >
+            <div class="error" ng-show="signErr">
+              <i class="ion-information-circled"></i>
+              Error signing up
+            </div>
+          </div>
+        </form>
+      </ion-tab>
+    </ion-tabs>
+
+
+  </ion-content>
+</ion-modal-view>
