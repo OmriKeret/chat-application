@@ -1,1 +1,1 @@
-window.serveUrl = 'http://10.0.0.6:3000';
+window.serveUrl = 'http://localhost:3000';
